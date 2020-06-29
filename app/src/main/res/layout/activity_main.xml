@@ -8,12 +8,35 @@
     android:screenOrientation="portrait">
 
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="156dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/select"
+        app:layout_constraintStart_toEndOf="@+id/currency3"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/edit3"
+        app:layout_constraintStart_toEndOf="@+id/currency1"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
     <EditText
         android:id="@+id/setUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints="@string/app_name"
         android:ems="10"
+        android:hint="create a new currtal..."
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,8 +58,8 @@
 
     <Button
         android:id="@+id/currency1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:text="Button"
@@ -45,18 +68,18 @@
 
     <Button
         android:id="@+id/currency2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="312dp"
+        android:layout_marginBottom="320dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/currency3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="264dp"
@@ -69,22 +92,14 @@
         android:id="@+id/edit1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
         android:clickable="true"
-        app:layout_constraintStart_toEndOf="@+id/currency1"
-        app:layout_constraintTop_toBottomOf="@+id/setUp"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
-
-    <TextView
-        android:id="@+id/featureTest"
-        android:layout_width="105dp"
-        android:layout_height="106dp"
-        android:layout_marginTop="236dp"
-        android:layout_marginEnd="24dp"
-        android:text="this feature works!"
+        app:layout_constraintBottom_toTopOf="@+id/edit2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/currency1"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
