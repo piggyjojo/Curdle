@@ -39,17 +39,17 @@ class MainActivity : AppCompatActivity() {
         setUp.setOnClickListener {
             tester.add(newCurrency.toString())
             when (View.INVISIBLE) {
-                currency1.visibility -> {
+                (currency1.visibility) -> {
                     currency1.text = tester[0]
                     currency1.visibility = View.VISIBLE
                     edit1.visibility = View.VISIBLE
                 }
-                currency2.visibility -> {
+                (currency2.visibility) -> {
                     currency2.text = tester[1]
                     currency2.visibility = View.VISIBLE
                     edit2.visibility = View.VISIBLE
                 }
-                currency3.visibility -> {
+                (currency3.visibility) -> {
                     currency3.text = tester[2]
                     currency3.visibility = View.VISIBLE
                     edit3.visibility = View.VISIBLE
@@ -63,15 +63,27 @@ class MainActivity : AppCompatActivity() {
 
         edit1.setOnClickListener {
             setUp.visibility = View.VISIBLE
-            currency1.text = tester.toString()
             tester[0] = (newCurrency.toString())
+            currency1.text = tester.toString()
+            
 
-            if (selectOpen)
-                selectOpen = !selectOpen
-            setUp.text.clear()
         }
+        edit2.setOnClickListener {
+            setUp.visibility = View.VISIBLE
+            currency1.text = tester.toString()
+            tester[1] = (newCurrency.toString())
 
+
+        }
+        edit3.setOnClickListener {
+            setUp.visibility = View.VISIBLE
+            currency1.text = tester.toString()
+            tester[2] = (newCurrency.toString())
+
+
+        }
     }
-
 }
+
+
 
