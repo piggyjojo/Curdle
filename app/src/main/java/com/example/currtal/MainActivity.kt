@@ -89,20 +89,5 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-//   txtUsername = findViewById(R.id.txtUsername)
-
-//                                                                                                                         txtUsername = findViewById(R.id.txtUsername)
-//
-//
-//   private fun openkeyboard(view: View){
-//       val imm:InputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-//                                                                                                                         private fun openkeyboard(view: View){
-//    if (view.getId() == R.id.edit1)(                                                                                         val imm:InputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-//       imm.showSoftInput(txtUsername, InputMethodManager.SHOW_FORCED))
-//   }                                                                                                                      if (view.getId() == R.id.edit1)(
-//        imm.showSoftInput(txtUsername, InputMethodManager.SHOW_FORCED))
-//    }
-
-
 
 
