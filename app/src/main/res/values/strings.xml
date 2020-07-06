@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Currtal</string>
+    <string name="create">create a new currtal...</string>
+    <string name="recent">recent</string>
 </resources>
